@@ -1,0 +1,396 @@
+:root {
+  --primary: #ff3c3c;
+  --primary-dark: #e21c40;
+  --accent: #ff2f63;
+  --text-dark: #09142b;
+  --text-muted: #666d80;
+  --white: #ffffff;
+  --bg-light: #f5f5f5;
+  --bg-soft: #f8f9fc;
+  --border-light: #ececec;
+  --shadow-sm: 0 8px 25px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.3);
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 25px;
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* hero section */
+.menu-hero {
+  /* background: #061a3a; */
+  background-image: url("../assets/images/menupage/herosection/Process-bg-88e10cae.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 120px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.breadcrumb-text {
+  font-size: 18px;
+  color: #d0d6e5;
+}
+
+.breadcrumb-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-text a:hover {
+  color: #ff3d57;
+}
+
+/* search-section */
+.search-section {
+  padding: 40px 10%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-btn {
+  background: #ff1e4d;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blue-btn {
+  width: 50px;
+  height: 45px;
+  background: #2167d6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu {
+  font-size: 20px;
+  color: #2167d6;
+  cursor: pointer;
+}
+
+/* menu */
+.process-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.process-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.process-card:hover {
+  background: linear-gradient(135deg, #e22424, #ff475f);
+  transform: translateY(-10px);
+  color: #000;
+}
+
+.process-card i {
+  font-size: 28px;
+  background: #1a2340;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.process-card:hover i {
+  background: #fff;
+  color: #d12b3f;
+}
+
+.process-card h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.process-card p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.process-card:hover .read-more {
+  color: #000;
+}
+
+.step-number {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 80px;
+  font-weight: 700;
+  opacity: 0.1;
+}
+
+.food-section {
+  background: #f5f5f7;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+}
+
+.food-img {
+  position: relative;
+}
+
+.food-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.discount {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #2d2d4d;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  color: #666d80;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.wishlist-btn:hover {
+  color: #ff3c5f;
+}
+
+.popular {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ff3c5f;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.food-content {
+  padding: 20px;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price-rating h4 {
+  color: #ff3c5f;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rating {
+  color: #444;
+}
+
+.rating i {
+  color: #ffb400;
+}
+
+.food-info {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.food-info li {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.food-info i {
+  color: #ff5a3c;
+  margin-right: 6px;
+}
+
+.cart-btn {
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  background: #ff3c5f;
+  color: #fff;
+}
+
+.browse-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.browse-btn {
+  background: #ff2d55;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 18px 50px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.browse-btn:hover {
+  background: #fff;
+  border: 2px solid #ff3c5f;
+  color: #ff3c5f;
+  transform: translateY(-3px);
+}
+
+/* Pagination Styles */
+
+.btn-prev {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #f01543;
+  background-color: #ffffff;
+  color: #f01543;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.btn-prev:hover {
+  background-color: #f01543;
+  color: #ffffff;
+}
+
+.btn-next {
+  height: 48px;
+  padding: 0 24px;
+  border: none;
+  background-color: #f01543;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-next:hover {
+  background-color: #d4123a;
+}
+
+.pagination-info {
+  color: #09142b;
+  font-size: 16px;
+}
+
+.page-input {
+  width: 45px;
+  height: 40px;
+  border: 1px solid #dde1e8;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #09142b;
+  background: #ffffff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.page-input:focus {
+  border-color: #f01543;
+}
+
+/* Keeps the page indicator on the far right on desktop, but centered on mobile */
+@media (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute !important;
+  }
+}
