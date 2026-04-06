@@ -26,67 +26,81 @@
     />
 
     <!--font awesom-->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
   </head>
   <body>
     <!-- top-bar part -->
-    <div class="top-bar py-3">
+    <div class="top-bar py-2 bg-danger bg-gradient text-white small">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-4">
+          <div class="col-md-4 d-none d-md-block">
             <span>Dropdown link</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-center text-md-start">
             <span>
-              It's the last day to save. The skills for now
-              <a href="#" class="text-decoration-underline">now on sale.</a>
+              It's the last day to save.
+              <a href="#" class="text-white text-decoration-underline ms-1"
+                >now on sale.</a
+              >
             </span>
           </div>
-          <div class="col-md-4 text-end">
-            <a href="#"><i class="bi bi-telephone-fill"></i> +17077970462</a>
-            <a href="#"
-              ><i class="bi bi-envelope-fill"></i> Quomodosoft@gmail.com</a
+          <div class="col-md-4 text-center text-md-end mt-2 mt-md-0">
+            <a
+              href="tel:+17077970462"
+              class="text-white text-decoration-none me-3"
             >
+              <i class="bi bi-telephone-fill me-1"></i> +17077970462
+            </a>
+            <a
+              href="mailto:Quomodosoft@gmail.com"
+              class="text-white text-decoration-none"
+            >
+              <i class="bi bi-envelope-fill me-1"></i> Quomodosoft@gmail.com
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- navbar part -->
-    <nav class="navbar navbar-div navbar-expand-lg">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand fw-bold fs-4" href="#">
           <img
             src="./assets/images/landingpage/imagehomepage/logo.svg"
             alt="logo"
           />
         </a>
 
-        <button
+        <a
           class="navbar-toggler"
-          type="button"
+          type="a"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav me-auto ms-4 mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto ms-lg-4 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="./Index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./about.html">About Us</a>
+              <a class="nav-link active text-danger" href="./about.html"
+                >About Us</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link " href="./menu.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./blog.html">Blog</a>
@@ -96,81 +110,103 @@
             </li>
           </ul>
 
-          <form class="d-flex me-3">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search food"
-            />
-            <button class="btn btn-outline-secondary" type="submit">
-              <i class="bi bi-search"></i>
-            </button>
+          <form class="d-flex me-lg-3 mb-3 mb-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search food"
+              />
+              <a class="btn btn-outline-secondary" type="submit">
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
           </form>
 
           <div class="d-flex align-items-center gap-3">
-            <i class="bi bi-heart fs-5"></i>
-            <i class="bi bi-cart fs-5"></i>
-            <a href="#" class="btn login-btn">Log In</a>
-            <a href="#" class="btn btn-outline-secondary signup-btn">Sign Up</a>
+            <a href="#" class="text-dark"><i class="bi bi-heart fs-5"></i></a>
+            <a href="#" class="text-dark me-2"
+              ><i class="bi bi-cart fs-5"></i
+            ></a>
+            <a href="#" class="btn btn-danger px-4">Log In</a>
+            <a href="#" class="btn btn-outline-danger px-4">Sign Up</a>
           </div>
         </div>
       </div>
     </nav>
 
     <!--hero section-->
-    <section class="menu-hero">
-      <div class="container text-center">
-        <h1 class="hero-title">About us</h1>
+    <section class="menu-hero text-white py-5">
+      <div class="container">
+        <div class="aboutus-Content">
+          <h1 class="fw-bold display-5 mb-3">About</h1>
 
-        <p class="breadcrumb-text"><a href="#">Home</a> › About us</p>
+          <!-- <p class="text-light mb-0">
+            <a href="#" class="text-white text-decoration-none">Home</a>
+           <span class="mx-2"><i class="fa-solid fa-angle-right"></i></span>
+            Menu
+          </p> -->
+        </div>
       </div>
     </section>
     <!-- Our Story Section -->
-    <section class="story-section">
+    <section class="story-section py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="single-image-box">
+        <div class="row align-items-center g-4">
+          <!-- LEFT IMAGE -->
+          <div class="col-lg-6 text-center">
+            <div class="position-relative d-inline-block">
               <img
                 src="assets/images/aboutpage/story/about-thumb-5129ac84.png"
-                alt="ReservQ Culinary Excellence image"
-                class="main-img"
+                alt="ReservQ Culinary Excellence"
+                class="img-fluid rounded shadow story-img"
               />
-              <div class="experience-badge single-badge">
-                <h2>50</h2>
-                <p>YEARS</p>
+
+              <!-- BADGE -->
+              <div class="experience-badge text-center">
+                <h2 class="mb-0 fw-bold">50</h2>
+                <small>YEARS</small>
               </div>
             </div>
           </div>
 
+          <!-- RIGHT CONTENT -->
           <div class="col-lg-6">
-            <h2 class="story-title">
+            <h2 class="fw-bold mb-3 text-dark">
               Our Story of food Culinary Excellence at ReservQ
             </h2>
-            <p class="story-text">
+
+            <p class="text-muted mb-2">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form.
             </p>
-            <p class="story-text2">
+
+            <p class="text-secondary fst-italic mb-4">
               Over 20 years’ experience providing top quality house booking.
             </p>
-            <div class="row stats">
+
+            <div class="row g-3">
+              <!-- STAT 1 -->
               <div class="col-6">
-                <div class="stat-box">
-                  <div class="icon">
+                <div>
+                  <div class="icon mb-2">
                     <i class="bi bi-people-fill"></i>
                   </div>
-                  <h4>90k+ Customers</h4>
-                  <p>Believe in our service & Care</p>
+                  <h5 class="fw-bold mb-1">90k+ Customers</h5>
+                  <p class="text-muted small mb-0">
+                    Believe in our service & Care
+                  </p>
                 </div>
               </div>
+
+              <!-- STAT 2 -->
               <div class="col-6">
-                <div class="stat-box">
-                  <div class="icon">
+                <div>
+                  <div class="icon mb-2">
                     <i class="bi bi-house-fill"></i>
                   </div>
-                  <h4>100+ Branch</h4>
-                  <p>Food ready for occupancy</p>
+                  <h5 class="fw-bold mb-1">100+ Branch</h5>
+                  <p class="text-muted small mb-0">Food ready for occupancy</p>
                 </div>
               </div>
             </div>
@@ -180,366 +216,268 @@
     </section>
 
     <!--The Process of Crafting your Dining Experience-->
-    <section class="process-section">
-      <div class="container">
-        <div class="process-wrapper">
-          <!-- LEFT IMAGE -->
-          <div class="process-image">
-            <img
-              src="assets/images/aboutpage/process/process-themb-7b918b08.png"
-              alt="process"
-            />
-          </div>
+<section class="process-section text-white py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
-          <!-- RIGHT CONTENT -->
-          <div class="process-content">
-            <h2 class="process-title">
-              The Process of Crafting your Dining Experience
-            </h2>
-
-            <div class="process-step">
-              <div class="step-icon">
-                <i class="bi bi-geo-alt-fill"></i>
-              </div>
-
-              <div class="step-text">
-                <h4>Set your location</h4>
-                <p>A high quality solution beautifully food for customers</p>
-              </div>
-
-              <span class="step-number">1</span>
-            </div>
-
-            <div class="process-step">
-              <div class="step-icon">
-                <i class="fa-solid fa-bowl-food"></i>
-              </div>
-
-              <div class="step-text">
-                <h4>Select Food</h4>
-                <p>A high quality solution beautifully food for customers</p>
-              </div>
-
-              <span class="step-number">2</span>
-            </div>
-
-            <div class="process-step">
-              <div class="step-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-
-              <div class="step-text">
-                <h4>Pay Cash or Online</h4>
-                <p>Providing an upscale and elegant ambiance for customers</p>
-              </div>
-
-              <span class="step-number">3</span>
-            </div>
-
-            <div class="process-step">
-              <div class="step-icon">
-                <i class="bi bi-truck"></i>
-              </div>
-
-              <div class="step-text">
-                <h4>Delivery or Pickup</h4>
-                <p>Allowing customers to easily book tables</p>
-              </div>
-
-              <span class="step-number">4</span>
-            </div>
-          </div>
-        </div>
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6 text-center">
+        <img
+          src="assets/images/aboutpage/process/process-themb-7b918b08.png"
+          alt="process"
+          class="img-fluid process-img"
+        />
       </div>
-    </section>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+
+        <h2 class="fw-bold mb-4">
+          The Process of Crafting your Dining Experience
+        </h2>
+
+        <!-- STEP 1 -->
+        <div class="process-step d-flex align-items-center position-relative mb-3">
+          <div class="step-icon me-3">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+
+          <div>
+            <h6 class="mb-1 fw-bold">Set your location</h6>
+            <p class="mb-0 small text-light">
+              A high quality solution beautifully food for customers
+            </p>
+          </div>
+
+          <span class="step-number">1</span>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="process-step d-flex align-items-center position-relative mb-3">
+          <div class="step-icon me-3">
+            <i class="fa-solid fa-bowl-food"></i>
+          </div>
+
+          <div>
+            <h6 class="mb-1 fw-bold">Select Food</h6>
+            <p class="mb-0 small text-light">
+              A high quality solution beautifully food for customers
+            </p>
+          </div>
+
+          <span class="step-number">2</span>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="process-step d-flex align-items-center position-relative mb-3">
+          <div class="step-icon me-3">
+            <i class="bi bi-phone-fill"></i>
+          </div>
+
+          <div>
+            <h6 class="mb-1 fw-bold">Pay Cash or Online</h6>
+            <p class="mb-0 small text-light">
+              Providing an upscale and elegant ambiance for customers
+            </p>
+          </div>
+
+          <span class="step-number">3</span>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="process-step d-flex align-items-center position-relative">
+          <div class="step-icon me-3">
+            <i class="bi bi-truck"></i>
+          </div>
+
+          <div>
+            <h6 class="mb-1 fw-bold">Delivery or Pickup</h6>
+            <p class="mb-0 small text-light">
+              Allowing customers to easily book tables
+            </p>
+          </div>
+
+          <span class="step-number">4</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--Most Popular Items-->
 
-    <section class="popular-section">
-      <div class="container">
-        <h2 class="section-title">Most Popular Items</h2>
+<section class="popular-section py-5 bg-light">
+  <div class="container">
 
-        <div class="grid-container">
-          <!-- Card 1 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/popular-5-a648c9c2.png"
-                alt="Quinoa-Stuffed Bell Pepper"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
-            </div>
+    <h2 class="fw-bold mb-4 text-dark">Most Popular Items</h2>
 
-            <div class="card-content">
-              <h3 class="item-title">Quinoa-Stuffed Bell Pepper</h3>
+    <div class="row g-4">
 
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
+      <!-- CARD -->
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100 popular-card d-flex flex-row overflow-hidden">
 
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
+          <!-- IMAGE -->
+          <div class="position-relative w-50 card-img-wrapper">
+            <img src="assets/images/aboutpage/popular/popular-5-a648c9c2.png"
+              class="img-fluid h-100 w-100 object-fit-cover" alt="">
+            <div class="rating-badge">
+              <i class="bi bi-star-fill"></i> 4.7(2.5K)
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/featured-2-02f14c5a.png"
-                alt="Grilled Pork Chop"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
+          <!-- CONTENT -->
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="fw-bold mb-2">Quinoa-Stuffed Bell Pepper</h5>
+
+            <ul class="list-unstyled small text-muted mb-auto">
+              <li><i class="bi bi-check-circle text-danger me-1"></i> 4 Piece Chicken</li>
+              <li><i class="bi bi-check-circle text-danger me-1"></i> Spicy Sauce</li>
+            </ul>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold text-dark">$30</span>
+              <button class="btn btn-danger btn-sm">
+                <i class="bi bi-cart3"></i> Add to Cart
+              </button>
             </div>
 
-            <div class="card-content">
-              <h3 class="item-title">Grilled Pork Chop Chutney</h3>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
-
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/popular-4-02f7e53b.png"
-                alt="Quinoa-Stuffed Bell Pepper"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h3 class="item-title">Quinoa-Stuffed Bell Pepper</h3>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
-
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/traditional-4-d8574aac.png"
-                alt="Grilled Pork Chop"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h3 class="item-title">BBQ Pulled Pork Sandwich</h3>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
-
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/traditional-5-89320b60.png"
-                alt="Quinoa-Stuffed Bell Pepper"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h3 class="item-title">Fish Tacos Chipotle Crema</h3>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
-
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="item-card">
-            <div class="card-img-wrapper">
-              <img
-                src="assets/images/aboutpage/popular/traditional-6-c7b53cff.png"
-                alt="Grilled Pork Chop"
-              />
-              <div class="rating-badge">
-                <i class="bi bi-star-fill"></i> 4.7(2.5K)
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h3 class="item-title">Bruschetta Tomato & Basil</h3>
-
-              <ul class="feature-list">
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> 4 Piece Chicken
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-danger"></i> Spicy Sauce
-                </li>
-              </ul>
-
-              <div class="card-footer">
-                <span class="price">$30</span>
-                <button class="cart-btn">
-                  <i class="bi bi-cart3"></i> Add to Cart
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-    </section>
 
+      <!-- Repeat same card for others -->
+      
+      <!-- CARD 2 -->
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100 popular-card d-flex flex-row overflow-hidden">
+
+          <div class="position-relative w-50 card-img-wrapper">
+            <img src="assets/images/aboutpage/popular/featured-2-02f14c5a.png"
+              class="img-fluid h-100 w-100 object-fit-cover" alt="">
+            <div class="rating-badge">
+              <i class="bi bi-star-fill"></i> 4.7(2.5K)
+            </div>
+          </div>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold mb-2">Grilled Pork Chop Chutney</h5>
+
+            <ul class="list-unstyled small text-muted mb-auto">
+              <li><i class="bi bi-check-circle text-danger me-1"></i> 4 Piece Chicken</li>
+              <li><i class="bi bi-check-circle text-danger me-1"></i> Spicy Sauce</li>
+            </ul>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold text-dark">$30</span>
+              <button class="btn btn-danger btn-sm">
+                <i class="bi bi-cart3"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 👉 Repeat same structure for remaining cards -->
+
+    </div>
+  </div>
+</section>
     <!-- What's Our Customer Say -->
-    <section class="testimonial-section">
-      <h1>What's Our Customer Say</h1>
+    <section
+      class="testimonial-section text-white text-center py-5 position-relative"
+    >
+      <div class="container position-relative">
+        <h1 class="fw-bold mb-5">What's Our Customer Say</h1>
 
-      <div class="testimonial-container">
-        <div class="testimonial-card">
-          <p class="quote">
-            "An absolute foodie's paradise! The flavors are a symphony of
-            delight. Every bite tells a story of passion and skill. A must-visit
-            for anyone seeking beyond compare."
-          </p>
+        <div class="row g-4 justify-content-center">
+          <!-- CARD 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card p-4 rounded-4 h-100">
+              <p class="mb-4 opacity-75">
+                "An absolute foodie's paradise! The flavors are a symphony of
+                delight. Every bite tells a story of passion and skill."
+              </p>
 
-          <div class="profile">
-            <img
-              src="assets/images/aboutpage/our-customer/customer-1-65d48dbf.png"
-            />
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <img
+                  src="./assets/images/landingpage/our-customer/customer-1-65d48dbf.png"
+                  class="rounded-3 profile-img"
+                />
 
-            <div class="profile-info">
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <div class="text-start">
+                  <div class="text-warning mb-1">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="fw-bold">Jonson Roy</div>
+                  <small class="opacity-75">Job Holder</small>
+                </div>
               </div>
-              <div class="name">Jonson Roy</div>
-              <div class="job">Job Holder</div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card">
-          <p class="quote">
-            "An absolute foodie's paradise! The flavors are a symphony of
-            delight. Every bite tells a story of passion and skill. A must-visit
-            for anyone seeking beyond compare."
-          </p>
+          <!-- CARD 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card p-4 rounded-4 h-100">
+              <p class="mb-4 opacity-75">
+                "An absolute foodie's paradise! The flavors are a symphony of
+                delight. Every bite tells a story of passion and skill."
+              </p>
 
-          <div class="profile">
-            <img
-              src="assets/images/aboutpage/our-customer/customer-2-f6010a44.png"
-            />
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <img
+                  src="./assets/images/landingpage/our-customer/customer-2-f6010a44.png"
+                  class="rounded-3 profile-img"
+                />
 
-            <div class="profile-info">
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <div class="text-start">
+                  <div class="text-warning mb-1">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="fw-bold">David Ethic</div>
+                  <small class="opacity-75">Dog Trainer</small>
+                </div>
               </div>
-              <div class="name">David Ethic</div>
-              <div class="job">Dog Trainer</div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card">
-          <p class="quote">
-            "An absolute foodie's paradise! The flavors are a symphony of
-            delight. Every bite tells a story of passion and skill. A must-visit
-            for anyone seeking beyond compare."
-          </p>
+          <!-- CARD 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card p-4 rounded-4 h-100">
+              <p class="mb-4 opacity-75">
+                "An absolute foodie's paradise! The flavors are a symphony of
+                delight. Every bite tells a story of passion and skill."
+              </p>
 
-          <div class="profile">
-            <img
-              src="assets/images/aboutpage/our-customer/customer-3-f496f7a0.png"
-            />
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <img
+                  src="./assets/images/landingpage/our-customer/customer-3-f496f7a0.png"
+                  class="rounded-3 profile-img"
+                />
 
-            <div class="profile-info">
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <div class="text-start">
+                  <div class="text-warning mb-1">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="fw-bold">Robert Fox</div>
+                  <small class="opacity-75">Bike Trainer</small>
+                </div>
               </div>
-              <div class="name">Robert Fox</div>
-              <div class="job">Bike Trainer</div>
             </div>
           </div>
         </div>
@@ -547,20 +485,24 @@
     </section>
 
     <!-- Foodie FAQ: Your Culinary Queries Answered -->
-    <section class="faq-section py-5">
+    <section class="faq-section py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center g-4">
           <!-- LEFT FAQ -->
           <div class="col-lg-6">
-            <h2 class="faq-title">
+            <h2 class="fw-bold mb-4 text-dark">
               Foodie FAQ: Your Culinary Queries Answered
             </h2>
 
             <div class="accordion" id="faqAccordion">
-              <div class="accordion-item">
+              <!-- ITEM 1 -->
+              <div
+                class="accordion-item border-0 rounded-3 mb-3 overflow-hidden"
+              >
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button"
+                    class="accordion-button fw-semibold"
+                    type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq1"
                   >
@@ -580,10 +522,14 @@
                 </div>
               </div>
 
-              <div class="accordion-item">
+              <!-- ITEM 2 -->
+              <div
+                class="accordion-item border-0 rounded-3 mb-3 overflow-hidden"
+              >
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed fw-semibold"
+                    type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq2"
                   >
@@ -603,10 +549,14 @@
                 </div>
               </div>
 
-              <div class="accordion-item">
+              <!-- ITEM 3 -->
+              <div
+                class="accordion-item border-0 rounded-3 mb-3 overflow-hidden"
+              >
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed fw-semibold"
+                    type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq3"
                   >
@@ -626,10 +576,14 @@
                 </div>
               </div>
 
-              <div class="accordion-item">
+              <!-- ITEM 4 -->
+              <div
+                class="accordion-item border-0 rounded-3 mb-3 overflow-hidden"
+              >
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed fw-semibold"
+                    type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq4"
                   >
@@ -653,26 +607,42 @@
 
           <!-- RIGHT IMAGE GRID -->
           <div class="col-lg-6">
-            <div class="faq-gallery">
-              <img
-                src="./assets/images/landingpage/faq/faq-1-41834309.png"
-                class="img1"
-              />
-
-              <div class="img2">
-                <img src="./assets/images/landingpage/faq/faq-2-f00ad769.png" />
-                <div class="overlay">235+<br />Success Event</div>
+            <div class="row g-3">
+              <div class="col-6">
+                <img
+                  src="./assets/images/landingpage/faq/faq-1-41834309.png"
+                  class="rounded-4 faq-img"
+                />
               </div>
 
-              <div class="img3">
-                <img src="./assets/images/landingpage/faq/faq-3-c2113267.png" />
-                <div class="overlay red">235+<br />Success Event</div>
+              <div class="col-6 position-relative">
+                <img
+                  src="./assets/images/landingpage/faq/faq-2-f00ad769.png"
+                  class="rounded-4 faq-img"
+                />
+                <div class="overlay">
+                  235+ <br />
+                  Success Event
+                </div>
               </div>
 
-              <img
-                src="./assets/images/landingpage/faq/faq-4-99cef41b.png"
-                class="img4"
-              />
+              <div class="col-6 position-relative">
+                <img
+                  src="./assets/images/landingpage/faq/faq-3-c2113267.png"
+                  class="rounded-4 faq-img"
+                />
+                <div class="overlay overlay-red">
+                  235+ <br />
+                  Success Event
+                </div>
+              </div>
+
+              <div class="col-6">
+                <img
+                  src="./assets/images/landingpage/faq/faq-4-99cef41b.png"
+                  class="rounded-4 faq-img"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -680,29 +650,31 @@
     </section>
 
     <!-- Find out Better Restaurant Food Experience -->
-    <section class="app-section">
+    <section class="app-section py-5 text-white">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center g-4">
           <!-- LEFT CONTENT -->
           <div class="col-lg-6">
-            <h1 class="app-title">
+            <h1 class="fw-bold display-5 mb-3">
               Find out Better Restaurant Food Experience
             </h1>
 
-            <p class="app-text">
+            <p class="mb-4 opacity-75">
               We've done it carefully and simply. Combined with the ingredients
               makes for beautiful landings.
             </p>
 
-            <div class="app-buttons">
-              <a href="#" class="store-btn google">
+            <div class="d-flex gap-3 flex-wrap">
+              <!-- Google -->
+              <a href="#" class="store-btn bg-white text-dark">
                 <img
                   src="./assets/images/landingpage/app-img/google-play.png"
                 />
                 Google Play
               </a>
 
-              <a href="#" class="store-btn apple">
+              <!-- Apple -->
+              <a href="#" class="store-btn bg-dark text-white">
                 <i class="bi bi-apple"></i>
                 App Store
               </a>
@@ -713,7 +685,7 @@
           <div class="col-lg-6 text-center">
             <img
               src="./assets/images/landingpage/app-img/restaurant-acff2947.png"
-              class="app-img"
+              class="img-fluid app-img"
             />
           </div>
         </div>
@@ -721,32 +693,34 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer-section">
+    <footer class="footer-section text-white pt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-about">
-            <a class="navbar-brand" href="#">
+        <div class="row g-4">
+          <!-- ABOUT -->
+          <div class="col-lg-3 col-md-6">
+            <a class="navbar-brand d-block mb-3" href="#">
               <img
                 src="https://reservq.vercel.app/assets/footer-logo-364dc9a3.svg"
                 alt="logo"
               />
             </a>
-            <p>
+            <p class="text-light small">
               At ReservQ, we invite you to embark on a journey of taste and
               delight. Our tables are more than just places.
             </p>
 
-            <div class="social-icons">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-youtube"></i>
+            <div class="d-flex gap-2">
+              <i class="bi bi-facebook social-icon"></i>
+              <i class="bi bi-twitter social-icon"></i>
+              <i class="bi bi-instagram social-icon"></i>
+              <i class="bi bi-youtube social-icon"></i>
             </div>
           </div>
 
+          <!-- QUICK LINKS -->
           <div class="col-lg-3 col-md-6">
-            <h5>Quick Link</h5>
-            <ul class="footer-links">
+            <h5 class="mb-3">Quick Link</h5>
+            <ul class="list-unstyled footer-links">
               <li>My Account</li>
               <li>About Us</li>
               <li>Store Locator</li>
@@ -755,68 +729,60 @@
             </ul>
           </div>
 
+          <!-- TERMS -->
           <div class="col-lg-3 col-md-6">
-            <h5>Terms & Privacy</h5>
-            <ul class="footer-links">
+            <h5 class="mb-3">Terms & Privacy</h5>
+            <ul class="list-unstyled footer-links">
               <li>Trust & Safety</li>
               <li>Terms of Service</li>
               <li>Privacy Policy</li>
             </ul>
           </div>
 
+          <!-- NEWSLETTER -->
           <div class="col-lg-3 col-md-6">
-            <h5>Subscribe our Newsletter</h5>
+            <h5 class="mb-3">Subscribe our Newsletter</h5>
 
-            <div class="newsletter">
-              <input type="email" placeholder="Your email" />
-              <button>Subscribe</button>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+              />
+              <button class="btn btn-danger">Subscribe</button>
             </div>
 
-            <h6 class="payment-title">We accept Payment methods:</h6>
+            <h6 class="mt-3">We accept Payment methods:</h6>
 
-            <ul class="payments">
-              <li>
-                <a href="#">
-                  <img src="./assets/images/landingpage/footer/download.png" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./assets/images/landingpage/footer/download (1).png"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./assets/images/landingpage/footer/download (2).png"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./assets/images/landingpage/footer/download (3).png"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./assets/images/landingpage/footer/download (4).png"
-                  />
-                </a>
-              </li>
-            </ul>
-
-            <div class="payments"></div>
+            <div class="d-flex gap-2 flex-wrap mt-2">
+              <img
+                src="./assets/images/landingpage/footer/download.png"
+                class="payment-img"
+              />
+              <img
+                src="./assets/images/landingpage/footer/download (1).png"
+                class="payment-img"
+              />
+              <img
+                src="./assets/images/landingpage/footer/download (2).png"
+                class="payment-img"
+              />
+              <img
+                src="./assets/images/landingpage/footer/download (3).png"
+                class="payment-img"
+              />
+              <img
+                src="./assets/images/landingpage/footer/download (4).png"
+                class="payment-img"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>©2023 ReservQ. All rights reserved</p>
+      <!-- FOOTER BOTTOM -->
+      <div class="text-center mt-5 pt-3 border-top">
+        <p class="mb-0 small text-light">©2023 ReservQ. All rights reserved</p>
       </div>
     </footer>
   </body>

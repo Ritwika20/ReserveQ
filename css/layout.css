@@ -4,358 +4,159 @@
   box-sizing: border-box;
 }
 
+/* Branding and Global Styles */
 body {
   font-family: "Inter", sans-serif;
   background-color: #f5f5f5;
   color: #09142b;
 }
 
-html body {
+/* Handling horizontal overflow globally */
+html, body {
   overflow-x: hidden;
 }
 
+/* Base link behavior for non-bootstrap components */
 a {
   display: inline-block;
-  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
-ul {
-  list-style: none;
+a:hover {
+  opacity: 0.8;
 }
 
+/* Section Spacing */
 .common-padding {
   padding: 80px 0;
 }
 
-/* topbar part  */
+/* Specific Top Bar styling not covered by utility classes */
 .top-bar {
-  background: linear-gradient(90deg, #ff3c3c, #ff6a6a);
-  color: #ffffff;
-  font-size: 14px;
+  /* Keep linear gradient if Bootstrap's bg-gradient isn't specific enough */
+  background: linear-gradient(90deg, #ff3c3c, #ff6a6a) !important;
 }
 
-.top-bar a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.top-bar i {
-  margin-right: 5px;
-}
-
-/* navbar part  */
-.navbar-div {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 24px;
-}
-
+/* Navbar Customizations */
 .navbar-nav .nav-link {
   font-weight: 500;
-  margin-right: 10px;
+  transition: color 0.2s;
 }
 
-.navbar-nav .nav-link.active {
-  color: #ff3c3c !important;
+/* Backdrop filter is a custom effect Bootstrap doesn't have a class for */
+.sticky-top {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-
 /* Foodie FAQ */
-.faq-section {
-  background: #f8f8f8;
-}
-
-.faq-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #0b132a;
-}
-
-.accordion-item {
-  border: none;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.accordion-button {
-  background: #fff;
-  font-weight: 600;
-}
-
-.accordion-button:not(.collapsed) {
-  background: #fff;
-  box-shadow: none;
-}
-
-.faq-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.faq-gallery img {
-  width: 100%;
-  border-radius: 15px;
+/* Image Zoom Effect */
+.faq-img {
   height: 200px;
+  width: 300px;
   object-fit: cover;
-}
-
-/* Foodie FAQ */
-.faq-section {
-  background: #f8f8f8;
-}
-
-.faq-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #0b132a;
-}
-
-.accordion-item {
-  border: none;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.accordion-button {
-  background: #fff;
-  font-weight: 600;
-}
-
-.accordion-button:not(.collapsed) {
-  background: #fff;
-  box-shadow: none;
-}
-
-.faq-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.faq-gallery img {
-  width: 100%;
-  border-radius: 15px;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Updated Gallery Image Styles */
-.faq-gallery img {
-  width: 100%;
-  border-radius: 15px;
-  height: 200px;
-  object-fit: cover;
-  /* 1. Add a smooth transition for the zoom */
   transition: transform 0.4s ease-in-out;
 }
 
-/* FAQ Image Overlay Containers */
-.img2,
-.img3 {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.faq-gallery img:hover,
-.img2:hover img,
-.img3:hover img {
+.faq-img:hover {
   transform: scale(1.06);
 }
 
-.faq-gallery .overlay {
+/* Overlay */
+.overlay {
+  height: 200px;
+  width: 300px;
+  margin-left: 8px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 40, 0.6);
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  background: rgba(0, 0, 40, 0.6);
-  border-radius: 15px;
   text-align: center;
+  border-radius: 1rem;
 }
 
-.faq-gallery .overlay.red {
-  background: rgba(255, 50, 80, 0.8);
-}
-.faq-gallery .overlay.red {
+.overlay-red {
   background: rgba(255, 50, 80, 0.8);
 }
 
 /* Find out Better Restaurant Food Experience*/
+/* Background */
 .app-section {
-  padding: 60px 0;
-  background-image: url("../assets/images/landingpage/app-img/rest-bg-542f355f.png");
-  background-repeat: no-repeat;
-  color: #fff;
+  background: url("../assets/images/landingpage/app-img/rest-bg-542f355f.png") no-repeat center;
+  background-size: cover;
 }
 
-.app-title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.app-text {
-  font-size: 18px;
-  opacity: 0.9;
-  margin-bottom: 35px;
-  max-width: 500px;
-}
-
-.app-buttons {
-  display: flex;
-  gap: 20px;
-}
-
+/* Store buttons (only custom part) */
 .store-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px 30px;
+  gap: 10px;
+  padding: 12px 25px;
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
-  font-size: 18px;
   transition: 0.3s;
 }
 
 .store-btn img {
-  width: 24px;
+  width: 22px;
 }
 
-.google {
-  background: #fff;
-  color: #000;
-}
-
-.apple {
-  background: #000;
-  color: #fff;
-}
-
+/* Hover */
 .store-btn:hover {
   transform: translateY(-4px);
 }
 
+/* Image slight offset */
 .app-img {
-  max-width: 100%;
-  transform: translateY(60px);
+  transform: translateY(50px);
 }
 
 /* Footer Section */
 .footer-section {
-  padding: 70px 0 20px;
-  color: #ffffff;
   background: #071a3d url("assets/images/footer/work-bg-e80571a8.png");
 }
 
-.footer-section .row {
-  color: #fff;
-}
-
-.footer-section h5 {
-  color: #fff;
-}
-
-.footer-about p,
-.footer-links li,
-.footer-bottom {
-  color: #cfd6e6;
-}
-
+/* Links */
 .footer-links li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   cursor: pointer;
   transition: 0.3s;
+  color: #cfd6e6;
 }
 
 .footer-links li:hover {
   color: #ff3d57;
 }
 
-.social-icons i {
-  color: #fff;
-  margin-right: 10px;
+/* Social Icons */
+.social-icon {
   padding: 10px;
   background: #1d2a4a;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.social-icons i:hover {
+.social-icon:hover {
   background: #ff3d57;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(255, 61, 87, 0.4);
 }
-.newsletter {
-  display: flex;
-  margin-bottom: 20px;
+
+/* Payment Images */
+.payment-img {
+  height: 28px;
+  transition: 0.4s;
 }
 
-.newsletter input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 6px 0 0 6px;
+.payment-img:hover {
+  transform: scale(1.08);
 }
-
-.newsletter button {
-  padding: 10px 20px;
-  border: none;
-  background: #ff3d57;
-  color: #fff;
-  border-radius: 0 6px 6px 0;
-}
-
-.payment-title {
-  margin: 15px 0 10px;
-}
-
-.payments {
-  margin-left: -30px;
-  list-style: none;
-  display: flex;
-  gap: 5px;
-  align-items: start;
-  justify-content: start;
-}
-
-.payments a img {
-  transition: all ease 0.75s;
-}
-
-.payments a img:hover {
-  transform: scale(1.07) translateY(-2px);
-}
-
-.footer-bottom {
-  margin-top: 40px;
-  padding-top: 15px;
-  text-align: center;
-  border-top: 1px solid #fff;
-}
-
 
 
 
@@ -460,7 +261,7 @@ ul {
     border-radius: 6px;
     margin-bottom: 10px;
   }
-  .newsletter button {
+  .newsletter a {
     border-radius: 6px;
     width: 100%;
   }
@@ -543,7 +344,7 @@ ul {
     border-radius: 6px;
     margin-bottom: 10px;
   }
-  .newsletter button {
+  .newsletter a {
     border-radius: 6px;
     width: 100%;
   }

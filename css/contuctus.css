@@ -19,34 +19,23 @@ body {
 
 /* hero section */
 .menu-hero {
-  background-image: url("../assets/images/contactuspage/imageherosection/Process-bg-88e10cae.png");
-  background-color: #061a3a;
-  background-size: cover;
+  background: #061a3a url("../assets/images/aboutpage/herosection/image.png");
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 120px 0;
-  text-align: center;
-  color: #fff;
+  background-repeat: repeat;
+  height: 300px;
 }
-
-.hero-title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 15px;
+.menu-hero .container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.breadcrumb-text {
-  font-size: 18px;
-  color: #d0d6e5;
-}
-
-.breadcrumb-text a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.breadcrumb-text a:hover {
-  color: #ff3d57;
+.aboutus-Content{
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Contact Section */
