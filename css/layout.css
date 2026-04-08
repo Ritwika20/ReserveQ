@@ -135,19 +135,27 @@ a:hover {
 
 /* Social Icons */
 .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   background: #1d2a4a;
   border-radius: 6px;
-  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
   transition: 0.3s;
+}
+
+.social-icon i {
+  font-size: 16px;
 }
 
 .social-icon:hover {
   background: #ff3d57;
   transform: translateY(-4px);
   box-shadow: 0 5px 15px rgba(255, 61, 87, 0.4);
+  color: #fff;
 }
-
 /* Payment Images */
 .payment-img {
   height: 28px;

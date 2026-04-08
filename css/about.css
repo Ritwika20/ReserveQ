@@ -146,34 +146,68 @@ body {
 }
 
 /* Most popular items */
-/* Remove container max-width → Bootstrap handles it */
-/* Remove grid → Bootstrap row/col used */
 
-/* Image Zoom Wrapper */
+/* Card Size Control */
+.popular-card {
+  max-width: 420px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Image Wrapper */
 .card-img-wrapper {
   overflow: hidden;
 }
 
-/* Image Zoom Effect */
+/* Image Fit */
+.card-img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Zoom Effect */
 .popular-card:hover img {
   transform: scale(1.1);
-  transition: 0.5s;
 }
 
 /* Rating Badge */
 .rating-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   background: #1a1f36;
   color: #fff;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 6px;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 5px;
 }
 
 .rating-badge i {
   color: #fbbf24;
+}
+
+/* Compact Content */
+.popular-card .card-body {
+  padding: 12px;
+}
+
+.popular-card h5 {
+  font-size: 16px;
+}
+
+.popular-card ul li {
+  font-size: 13px;
+}
+
+.popular-card span {
+  font-size: 14px;
+}
+
+/* Button */
+.popular-card .btn {
+  font-size: 12px;
+  padding: 4px 10px;
 }
 
 /* What's Our Customer Say */
